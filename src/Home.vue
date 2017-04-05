@@ -1,20 +1,24 @@
 <template>
-  <div >
-    Home
-  </div>
+    <div>
+        <hero></hero>
+        <featured-hotels></featured-hotels>
+    </div>
 </template>
 
 <script>
+    import Hero from './Hero.vue';
+    import FeaturedHotels from './FeaturedHotels.vue';
 
-export default {
-  name: 'app',
-  data () {
-    return {
+    export default {
+        name: 'home',
+        data () {
+            return {}
+        },
+        components: {
+            Hero,
+            FeaturedHotels
+        }
     }
-  },
-  components: {
-  }
-}
 </script>
 
 <style>
